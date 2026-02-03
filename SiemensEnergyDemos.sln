@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Siemens.CodeLibrary", "Siem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Siemens.GUIClient", "Siemens.GUIClient\Siemens.GUIClient.csproj", "{1249074C-C575-4359-9431-8EE41C83D5B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticArraysDemo", "StaticArraysDemo\StaticArraysDemo.csproj", "{059708C3-6718-4BA3-954D-31658CAB152C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OODemo1", "OODemo1\OODemo1.csproj", "{DB0AC991-BC58-4DD0-9886-F82FBBF19DA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{1249074C-C575-4359-9431-8EE41C83D5B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1249074C-C575-4359-9431-8EE41C83D5B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1249074C-C575-4359-9431-8EE41C83D5B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{059708C3-6718-4BA3-954D-31658CAB152C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{059708C3-6718-4BA3-954D-31658CAB152C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{059708C3-6718-4BA3-954D-31658CAB152C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{059708C3-6718-4BA3-954D-31658CAB152C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB0AC991-BC58-4DD0-9886-F82FBBF19DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB0AC991-BC58-4DD0-9886-F82FBBF19DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB0AC991-BC58-4DD0-9886-F82FBBF19DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB0AC991-BC58-4DD0-9886-F82FBBF19DA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
