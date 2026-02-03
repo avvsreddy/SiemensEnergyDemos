@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticArraysDemo", "StaticA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OODemo1", "OODemo1\OODemo1.csproj", "{DB0AC991-BC58-4DD0-9886-F82FBBF19DA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OODemo2", "OODemo2\OODemo2.csproj", "{EFF3C44B-4FE6-42F4-95FA-F1066A22CC4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DB0AC991-BC58-4DD0-9886-F82FBBF19DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB0AC991-BC58-4DD0-9886-F82FBBF19DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB0AC991-BC58-4DD0-9886-F82FBBF19DA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFF3C44B-4FE6-42F4-95FA-F1066A22CC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF3C44B-4FE6-42F4-95FA-F1066A22CC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF3C44B-4FE6-42F4-95FA-F1066A22CC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF3C44B-4FE6-42F4-95FA-F1066A22CC4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,28 +2,27 @@
 {
     internal class Program //: Customer
     {
-        // fields
-        int a;
-        //static Customer customer = new Customer(); // HAS-A
-
         static void Main(string[] args)
         {
-            int a;
 
-            Customer customer = new Customer(); // Useses
-            customer.name = "Ravi";
-            customer.Name = "Ravi";
+            //Employee e = new Employee();
 
-            //customer.age = -30;
-            //customer.SetAge(-20);
-            customer.Age = 20;
-            //Console.WriteLine(customer.age);
-            //Console.WriteLine(customer.GetAge());
-            Console.WriteLine(customer.Age);
+            //Employee e1 = new Employee();
+            //e1.EmpID = 1;
+            //e1.Name = "Test";
+            //e1.Salary = 20000;
+
+            //Employee e2 = new Employee(111, "Suresh");
+
+            // Object Initialization Syntax
+
+            var e22 = new { EmpID = 111, Name = "Suresh" };
+
+            var e3 = new { EmpID = 123, Name = "Ravi", Salary = 60000 };
+
+            var e4 = new { Salary = 670000, EmpID = 345 };
 
 
-
-            Console.WriteLine("Hello, World!");
         }
 
 
@@ -56,7 +55,7 @@
         }
         public double Discount
         {
-            set { this.discount = value; }
+            //set { this.discount = value; }
             get { return this.discount; }
         }
 
@@ -112,10 +111,34 @@
 
     }
 
-    class Employee
-    {
-        public int EmpID { get; set; }
-        public string Name { get; set; }
-        public int Salary { get; set; }
-    }
+    //class Employee
+    //{
+
+    //    public int EmpID { get; set; }
+    //    public string Name { get; set; }
+    //    public int Salary { get; set; }
+
+
+    //    //public Employee()
+    //    //{
+
+    //    //}
+    //    //public Employee(int id)
+    //    //{
+    //    //    EmpID = id;
+    //    //}
+
+    //    //public Employee(int id, string name) : this(id) 
+    //    //{
+    //    //    //EmpID = id;
+    //    //    Name = name;
+    //    //}
+
+    //    //public Employee(int id, string name, int sal) : this(id,name)
+    //    //{
+    //    //    //EmpID = id;
+    //    //    //Name = name;
+    //    //    Salary = sal;
+    //    //}
+    //}
 }
