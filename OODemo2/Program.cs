@@ -8,10 +8,22 @@
             LangCSharp cs = new LangCSharp();
             LangJava java = new LangJava();
             LangC c = new LangC();
+            Python py = new Python();
 
-            ide.CS = cs;
-            ide.Java = java;
-            ide.C = c;
+
+            //ILanguage l = new ILanguage();
+            //ObjectOriented oo = new ObjectOriented();
+
+            ILanguage il = new LangCSharp();
+
+            //ide.CS = cs;
+            //ide.Java = java;
+            //ide.C = c;
+
+            ide.Languages.Add(cs);
+            ide.Languages.Add(java);
+            ide.Languages.Add(c);
+            ide.Languages.Add(py);
 
             ide.StartWork();
 
@@ -19,53 +31,70 @@
         }
     }
 
-    class IDE
+    class IDE // OCP
     {
         //LangCSharp cs = new LangCSharp();
 
-        public LangCSharp CS { get; set; }
-        public LangC C { get; set; }
-        public LangJava Java { get; set; }
+        //public LangCSharp CS { get; set; }
+        //public LangC C { get; set; }
+        //public LangJava Java { get; set; }
 
+        //public List<ILanguage> Languages = new List<ILanguage>();
+        public List<ILanguage> Languages { get; set; } = new List<ILanguage>();
 
         public void StartWork()
         {
-            Console.WriteLine(CS.GetName());
-            Console.WriteLine(CS.GetUnit());
-            Console.WriteLine(CS.GetParadigm());
-            Console.WriteLine("---------------------");
-            Console.WriteLine(Java.GetName());
-            Console.WriteLine(Java.GetUnit());
-            Console.WriteLine(Java.GetParadigm());
-            Console.WriteLine("---------------------");
-            Console.WriteLine(C.GetName());
-            Console.WriteLine(C.GetUnit());
-            Console.WriteLine(C.GetParadigm());
-            Console.WriteLine("---------------------");
+            foreach (ILanguage language in Languages)
+            {
+                Console.WriteLine(language.GetName());
+                Console.WriteLine(language.GetUnit());
+                Console.WriteLine(language.GetParadigm());
+                Console.WriteLine("---------------------");
+            }
+
+
         }
 
     }
 
 
-    class LangCSharp
+    interface ILanguage
     {
-        public string GetName()
-        {
-            return "C Sharp";
-        }
+        string GetName();
+        string GetUnit();
+        string GetParadigm();
+    }
 
-        public string GetUnit()
-        {
-            return "Class";
-        }
+
+    abstract class ObjectOriented : ILanguage
+    {
+        abstract public string GetName();
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public string GetParadigm()
         {
             return "Object Oriented";
         }
+
+        public string GetUnit()
+        {
+            return "Classes";
+        }
     }
 
-    class LangC
+    class LangCSharp : ObjectOriented // Generalization - Realization - IS-A
+    {
+        override public string GetName()
+        {
+            return "C Sharp";
+        }
+
+
+    }
+
+    class LangC : ILanguage
     {
         public string GetName()
         {
@@ -83,23 +112,27 @@
         }
     }
 
-    class LangJava
+    class LangJava : ObjectOriented
     {
-        public string GetName()
+        override public string GetName()
         {
             return "Java";
         }
 
-        public string GetUnit()
-        {
-            return "Class";
-        }
 
-        public string GetParadigm()
-        {
-            return "Object Oriented";
-        }
     }
 
+    class Python : ObjectOriented
+    {
+        override public string GetName()
+        {
+            return "Python";
+        }
 
+
+    }
+
+    public class JavaScript : ILanguage
+    {
+    }
 }
