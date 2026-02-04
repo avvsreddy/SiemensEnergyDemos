@@ -1,5 +1,6 @@
 ﻿using EFDemo.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace EFDemo.DAL
 {
@@ -11,7 +12,7 @@ namespace EFDemo.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=SiemensEnergyDB;Integrated Security=True;Trust Server Certificate=True");
+            optionsBuilder.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=SiemensEnergyDB;Integrated Security=True;Trust Server Certificate=True").LogTo(Console.WriteLine, LogLevel.Information);
         }
 
         // Map Classes to Table
