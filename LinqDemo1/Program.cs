@@ -4,6 +4,7 @@ namespace LinqDemo1
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
             //    // LINQ ~ Language Integrated Query 
@@ -68,6 +69,14 @@ namespace LinqDemo1
             var shortWords = from word in xDoc.Descendants("word")
                              where word.Value.Length <= 3
                              select word.Value;
+
+            var shotWords2 = xDoc.Descendants("word").Where(x => x.Value.Length <= 3)
+                .Select(x => x.Value);
+
+            var a = 10;
+            //a = "sdfsdf";
+            var str = "hello world";
+
 
 
             foreach (var item in shortWords)
