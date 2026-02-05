@@ -8,10 +8,20 @@ namespace ProductCatelogMVCWebApp.Controllers
     {
         ProductsDbContext db = new ProductsDbContext();
 
-        public IActionResult Index()
+        public IActionResult Index(string txtSearch)
         {
             // fetch the data from model
-            List<Product> products = db.Products.ToList();
+            List<Product> products = null;
+            if (string.IsNullOrEmpty(txtSearch))
+            {
+                products = db.Products.ToList();
+            }
+            else
+            {
+                products = (from p in db.Products
+                            where p.Category.Contains(txtSearch)
+                            select p).ToList();
+            }
             // pass the data to view
 
 
