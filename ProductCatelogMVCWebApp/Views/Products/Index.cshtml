@@ -1,0 +1,12 @@
+﻿@model List<ProductCatelogMVCWebApp.Models.Entities.Product>
+
+<h1>Products List (@Model.Count)</h1>
+<hr />
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.ProductName</li>
+    }
+
+</ul>
