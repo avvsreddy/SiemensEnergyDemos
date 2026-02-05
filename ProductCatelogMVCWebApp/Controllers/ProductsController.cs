@@ -32,6 +32,16 @@ namespace ProductCatelogMVCWebApp.Controllers
             return View();
         }
 
+        public IActionResult Save(Product productToSave)
+        {
+            // validate
+            // send it to model to saving
+            db.Products.Add(productToSave);
+            db.SaveChanges();
+            // return a view
+            return RedirectToAction("Index");
+        }
+
     }
 
 
