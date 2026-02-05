@@ -23,9 +23,16 @@ namespace ProductCatelogMVCWebApp.Controllers
                             select p).ToList();
             }
             // pass the data to view
-
-
             return View(products);
         }
+
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
     }
+
+
 }
