@@ -34,6 +34,7 @@
         <th>Price</th>
         <th>Is Available</th>
         <th>Category</th>
+        <th>Actions</th>
     </tr>
     @foreach (var item in Model)
     {
@@ -43,6 +44,10 @@
             <td>@item.Price</td>
             <td>@item.IsAvailable</td>
             <td>@item.Category</td>
+            <td>
+                <a class="btn btn-danger" href="/Products/Delete/@item.ProductID">Delete</a> |
+                <a class="btn btn-warning" href="/Products/Edit/@item.ProductID">Edit</a>
+            </td>
 
         </tr>
     }

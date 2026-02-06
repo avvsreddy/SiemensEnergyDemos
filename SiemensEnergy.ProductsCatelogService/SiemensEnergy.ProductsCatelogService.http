@@ -1,0 +1,6 @@
+@SiemensEnergy.ProductsCatelogService_HostAddress = http://localhost:5269
+
+GET {{SiemensEnergy.ProductsCatelogService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
