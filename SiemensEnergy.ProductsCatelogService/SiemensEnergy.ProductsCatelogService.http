@@ -1,6 +1,15 @@
-@SiemensEnergy.ProductsCatelogService_HostAddress = http://localhost:5269
+@SiemensEnergy.ProductsCatelogService_HostAddress = https://localhost:44385
 
 GET {{SiemensEnergy.ProductsCatelogService_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+GET {{SiemensEnergy.ProductsCatelogService_HostAddress}}/api/products
+Accept: application/json
+
+###
+
+GET {{SiemensEnergy.ProductsCatelogService_HostAddress}}/api/products/22
+Accept: application/json
+
