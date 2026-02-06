@@ -180,3 +180,20 @@ namespace SiemensEnergy.ProductsCatelogService.Controllers
         }
     }
 }
+
+
+
+// extra topics needs to consider
+
+// 1. Model validation
+// 2. Exception handling
+// 3. Logging
+// 4. Authentication and Authorization -  JWT, Identity Server, ASP.NET Identity
+// 5. Caching - In Memory, Distributed Cache, Response Caching
+// 6. API Versioning
+// 7. API Documentation - Swagger, NSwag - done
+// 8. API Testing - Unit Testing, Integration Testing, Postman
+// 9. CORS - Cross Origin Resource Sharing
+// 10 Dependancy Injection and Inversion of Control
+// 11. Asynchronous programming with async and await
+// 12. ODATA - Open Data Protocol
