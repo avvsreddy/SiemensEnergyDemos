@@ -197,3 +197,16 @@ namespace SiemensEnergy.ProductsCatelogService.Controllers
 // 10 Dependancy Injection and Inversion of Control
 // 11. Asynchronous programming with async and await
 // 12. ODATA - Open Data Protocol
+// 13. Microservices architecture and API Gateway
+
+
+// Calling API from client application
+// 1. Using HttpClient in .NET applications
+// 2. Using Fetch API in JavaScript applications
+// 3. Using Axios in JavaScript applications
+// 4. Using jQuery AJAX in JavaScript applications
+// 5. Using RestSharp in .NET applications
+// 6. Using Postman for testing APIs
+// 7. Using Swagger UI for testing APIs
+// 8. Using GraphQL for querying APIs
+// 9. Using HttpClient for Angular applications
